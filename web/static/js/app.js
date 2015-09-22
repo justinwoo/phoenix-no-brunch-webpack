@@ -1,9 +1,10 @@
-import 'babel-core/polyfill';
-
 import $ from 'jquery';
 import Rx from 'rx';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import Elm from '../elm/App.elm';
+Elm.fullscreen(Elm.App);
 
 var filesData$ = new Rx.Subject();
 var updateFilesData$ = filesData$.map(function (files) {

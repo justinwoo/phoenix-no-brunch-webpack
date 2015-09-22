@@ -7,10 +7,17 @@ module.exports = {
     filename: 'app.js'
   },
   module: {
-    loaders: [{
-      loader: 'babel-loader',
-      test: /\.js$/,
-      exclude: /node_modules/
-    }]
+    loaders: [
+      {
+        loader: 'babel-loader',
+        test: /\.js$/,
+        exclude: /node_modules/
+      },
+      {
+        loader: 'elm-simple-loader',
+        test: /\.elm$/,
+        exclude: /node_modules/
+      }
+    ]
   }
 };
