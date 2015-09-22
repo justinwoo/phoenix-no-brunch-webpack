@@ -19,6 +19,10 @@ defmodule MyApp.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", MyApp do
+    get "files", ApiController, :files
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", MyApp do
   #   pipe_through :api
