@@ -22,6 +22,11 @@ function init() {
   filesData$.subscribe(function (files) {
     elmApp.ports.newFiles.send(files);
   });
+
+  elmApp.ports.updateRequests.subscribe(function (value) {
+    console.log('update requested');
+    loadFilesData();
+  });
 }
 
 init();
