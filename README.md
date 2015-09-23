@@ -1,4 +1,10 @@
-# MyApp - Webpack in Phoenix for sane front end development
+# MyApp - Webpack in Phoenix for sane front end development: the Elm-stuff branch
+
+This branch brings in Elm for doing our views and a lot of other stuff with some port usage for interop. Uses a Webpack loader to bring in the Elm sources using whatever `elm-make` in installed on the system.
+
+[Look at this sick commit, all typechecked and runtime exception free and all](https://github.com/justinwoo/phoenix-no-brunch-webpack/commit/2918a66393e14bf79c90596c1486140a4f40531a)
+
+--------------------
 
 Original guide for Phoenix 0.12 here: http://manukall.de/2015/05/01/automatically-building-your-phoenix-assets-with-webpack/
 
